@@ -1,0 +1,4 @@
+# Copy this file to android/local.properties (Flutter/Android Studio usually
+# generates it for you automatically on first run/open).
+# sdk.dir=C:\\Users\\YOU\\AppData\\Local\\Android\\Sdk
+# flutter.sdk=C:\\src\\flutter

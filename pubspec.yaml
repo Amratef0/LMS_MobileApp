@@ -1,0 +1,60 @@
+name: lms_mobile
+description: "LMS Pro Mobile - Flutter client for the LMS Pro learning management system (matches the Angular web app, same .NET 8 API & database)."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.9.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # State management (Cubit only, from flutter_bloc package)
+  flutter_bloc: ^9.1.1
+  equatable: ^2.0.7
+
+  # Networking
+  dio: ^5.7.0
+
+  # Local storage (JWT token, cached user)
+  shared_preferences: ^2.3.3
+
+  # Formatting
+  intl: ^0.20.2
+
+  # Fonts matching the website (Inter for EN, Cairo for AR)
+  google_fonts: ^6.2.1
+
+  # Icons
+  cupertino_icons: ^1.0.8
+
+  # Charts for the student dashboard (attendance / scores)
+  fl_chart: ^0.70.2
+
+  # File picking for assignment / attachment PDF uploads
+  file_picker: ^8.1.7
+
+  # Opening record links / external links
+  url_launcher: ^6.3.1
+
+  # Saving/sharing downloaded report files (.xlsx / .pdf from /reports/*)
+  path_provider: ^2.1.5
+  # Pinned to the 7.x line on purpose: its Share.shareXFiles(...) API has
+  # been stable/non-breaking for a long time. Newer major versions moved to
+  # an instance-based SharePlus.instance.share(...) API that's still
+  # changing, so 7.x is the safer bet without being able to test-compile here.
+  share_plus: ^7.2.2
+
+  # Pull to refresh
+  # (built into Flutter via RefreshIndicator, no package needed)
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true

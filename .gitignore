@@ -1,0 +1,61 @@
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+.idea/
+*.iml
+android/local.properties
+android/.gradle/
+android/app/.cxx/
+ios/
+macos/
+linux/
+windows/
+web/
+.vscode/
+.dart_tool/
+.packages
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+*.iml
+.idea/
+android/.gradle/
+android/local.properties
+ios/Pods/
+# Flutter / Dart
+.pub-cache/
+.pub/
+coverage/
+*.log
+
+# IDE
+.vscode/
+*.swp
+
+# Android: الـ signing (مهم جداً)
+**/android/key.properties
+*.jks
+*.keystore
+android/gradle-wrapper.jar
+android/app/debug/
+android/app/profile/
+android/app/release/
+**/android/captures/
+
+# iOS (لو هتبني عليه)
+ios/.symlinks/
+ios/Flutter/Generated.xcconfig
+ios/Flutter/flutter_export_environment.sh
+**/xcuserdata/
+
+# أسرار وإعدادات خاصة
+.env
+.env.*
+google-services.json
+GoogleService-Info.plist
+
+# أنظمة التشغيل
+.DS_Store
+Thumbs.db
